@@ -1,4 +1,4 @@
-class GradleTest { 
+class SimpleTest { 
 
 public static void main (String[] args)
 {
