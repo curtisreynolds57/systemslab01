@@ -23,6 +23,12 @@ buildscript {
 task (minify, dependsOn: 'jar', type: proguard.gradle.ProGuardTask){
     configuration 'proguard.cfg'
 
-    injars 'build/libs/lab03.jar'
-    outjars 'build/libs/lab03.jar'
+    injars {
+		home/curtisreynolds/csci2020u/lab03/build/libs/lab03.jar
+		}
+	outjars {
+		home/curtisreynolds/csci2020u/lab03/build/libs/lab03minify.jar
+		}
+	
+  
 }
